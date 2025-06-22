@@ -1,27 +1,33 @@
-body {
-    font-family: Arial;
+@import url(../Assets/fonts/clashGrotesk.css);
+
+body{
+    font-family: 'ClashGrotesk-Regular';
     background-color: #f4f4f4;
     margin: 0;
     padding: 20px;
 }
-
+input, button {
+    font-family: 'ClashGrotesk-Regular';
+}
 button {
     margin: .5% 0 0 0;
 }
 
-div.userInput{
+div.userInput, div.userIdeas{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 3%;
+    padding: 1% 3% 3% 3%;
     background-color: #dfdede;
     width: fit-content;
     border-radius: 15px;
     position: relative;
     margin: 0 auto;
+    min-height: 10vh;
+    min-width: 10vw;
 }
-div.userInput:hover {
+div.userInput:hover, div.userIdeas:hover {
     box-shadow: 0 0 15px #bb13fee5;
     background-color: #BC13FE;
 }
@@ -33,4 +39,18 @@ div.userInterface {
 }
 div.text {
     text-align: center;
+}
+div.flexContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2%;
+}
+h4 {
+    padding: 0%;
+    margin: 0%;
+}
+div.userIdeas {
+    justify-content: flex-start;
 }
